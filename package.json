@@ -1,0 +1,35 @@
+{
+  "name": "tao",
+  "version": "1.0.0",
+  "description": "The Tao of Programming",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/floh1695/tao.git"
+  },
+  "keywords": [
+    "Tao",
+    "Programming",
+    "Humor"
+  ],
+  "author": "Charles Bayley",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/floh1695/tao/issues"
+  },
+  "homepage": "https://github.com/floh1695/tao#readme",
+  "devDependencies": {
+    "@types/hyperscript": "^0.0.4",
+    "@types/node": "^20.3.2",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "hyperscript": "^2.0.2",
+    "hyperscript-helpers": "^3.0.3"
+  }
+}
