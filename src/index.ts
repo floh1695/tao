@@ -5,6 +5,7 @@ import pile from './pile';
 
 import hyperscript from './hyperscript'
 const {
+  b,
   body,
   div,
   head,
@@ -27,7 +28,7 @@ const createMarkup = (): Element => {
     body([
       header([
         h1(siteName),
-        p('Translated by Geoffrey James'),
+        b(p('Translated by Geoffrey James')),
       ]),
       div([
         note('Alex', [

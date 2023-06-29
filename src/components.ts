@@ -9,11 +9,13 @@ import { emDash } from './unicode';
 import hyperscript from './hyperscript'
 const {
   a,
+  b,
   br,
   div,
   h2,
   h3,
   h4,
+  header,
   p,
   q,
   section,
@@ -35,15 +37,19 @@ export const note = (author: string, message: ElementLike): Element => {
   return markup;
 };
 
-export const book = (b: Book): Element => {
+export const book = (bk: Book): Element => {
   const markup = section([
-    h2(b.number),
-    h3(b.name),
+    header([
+      h2(['BOOK ', bk.number]),
+      h3(bk.name),
+    ]),
     p([
-      'Thus spake the Master Programmer:',
-      br(),
-      q(b.spaken),
-      b.chapters.map(c => chapter(c, b.number)),
+      b([
+        'Thus spake the Master Programmer:',
+        br(),
+        q(bk.spaken),
+      ]),
+      bk.chapters.map(c => chapter(c, bk.number)),
     ]),
   ]);
 
