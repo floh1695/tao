@@ -1,26 +1,33 @@
 import fs from 'fs/promises';
 
+import { ElementLike } from './element';
+import { Optional } from './optional';
+
+import { Book } from './book';
+import { Chapter } from './chapter';
+
 import h from 'hyperscript';
 import hh from 'hyperscript-helpers';
 const {
   a,
   body,
+  blockquote,
+  br,
   div,
   head,
   h1,
+  h2,
+  h3,
+  h4,
   header,
   html,
   meta,
   p,
   q,
+  section,
   span,
   title,
 } = hh(h);
-
-type Optional<A> = A | null | undefined;
-
-type ElementString = Element | string;
-type ElementLike = ElementString | Array<ElementString>;
 
 const unicode = {
   emDash: '\u2014',
@@ -48,9 +55,34 @@ const createMarkup = (): Element => {
         note('Charlie', [
           'I copied this from ',
           link({ href: 'http://www.mit.edu/~xela/tao.html' }),
-          ' and updated the page into semantic HTML with more hyperlinks.'
+          ' and updated the markup to be more modern.'
         ]),
       ]),
+      book(Book.new(
+        1,
+        'The Silent Void',
+        'When you have learned to snatch the error code from the trap frame, it will be time for you to leave.',
+        [
+          Chapter.new(1, [
+            p([
+              'Something mysterious is formed, born in the silent void.',
+              'Waiting alone and unmoving, it is at once still and yet in constant motion.',
+              'It is the source of all programs.',
+              'I do not know its name, so I will call it the Tao of Programming.',
+            ]),
+            blockquote([
+              'If the Tao is great, then the operating system is great.',
+              br(),
+              'If the operating system is great, then the compiler is great.',
+              br(),
+              'If the compiler is great, then the application is great.',
+              br(),
+              'The user is pleased, and there is harmony in the world.',
+            ]),
+            p('The Tao of Programming flows far away and returns on the wind of morning.'),
+          ]),
+        ]
+      )),
     ]),
   ]);
 
@@ -67,6 +99,30 @@ const note = (author: string, message: ElementLike): Element => {
       q(message),
     ]),
     span(`${unicode.emDash}${author}`),
+  ]);
+
+  return markup;
+};
+
+const book = (b: Book): Element => {
+  const markup = section([
+    h2(b.number),
+    h3(b.name),
+    p([
+      'Thus spake the Master Programmer:',
+      br(),
+      q(b.spaken),
+      b.chapters.map(c => chapter(c, b.number)),
+    ]),
+  ]);
+
+  return markup;
+};
+
+const chapter = (c: Chapter, bookNumber: number): Element => {
+  const markup = section([
+    h4(`${bookNumber}.${c.number}`),
+    c.content,
   ]);
 
   return markup;
