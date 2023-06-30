@@ -81,4 +81,115 @@ export default [
       ]),
     ]
   ),
+  Book.new(
+    2,
+    'The Ancient Masters',
+    'After three days without programming, life becomes meaningless.',
+    [
+      Chapter.new(1, [
+      ]),
+      Chapter.new(2, [
+      ]),
+      Chapter.new(3, [
+      ]),
+      Chapter.new(4, [
+      ]),
+    ]
+  ),
+  Book.new(
+    3,
+    'Design',
+    'When a program is being tested, it is too late to make design changes.',
+    [
+      Chapter.new(1, [
+      ]),
+      Chapter.new(2, [
+      ]),
+      Chapter.new(3, [
+      ]),
+      Chapter.new(4, [
+      ]),
+    ]
+  ),
+  Book.new(
+    4,
+    'Coding',
+    'A well-written program is its own Heaven; a poorly-written program is its own Hell.',
+    [
+      Chapter.new(1, [
+      ]),
+      Chapter.new(2, [
+      ]),
+      Chapter.new(3, [
+      ]),
+      Chapter.new(4, [
+      ]),
+    ]
+  ),
+  Book.new(
+    5,
+    'Maintenance',
+    'Though a program be but three lines long, someday it will have to be maintained.',
+    [
+      Chapter.new(1, [
+      ]),
+      Chapter.new(2, [
+      ]),
+      Chapter.new(3, [
+      ]),
+      Chapter.new(4, [
+      ]),
+    ]
+  ),
+  Book.new(
+    6,
+    'Management',
+    'Let the programmers be many and the managers few -- then all will be productive.',
+    [
+      Chapter.new(1, [
+      ]),
+      Chapter.new(2, [
+      ]),
+      Chapter.new(3, [
+      ]),
+      Chapter.new(4, [
+      ]),
+    ]
+  ),
+  Book.new(
+    7,
+    'Corporate Wisdom',
+    'You can demonstrate a program for a corporate executive, but you can\'t make him computer literate.',
+    [
+      Chapter.new(1, [
+      ]),
+      Chapter.new(2, [
+      ]),
+      Chapter.new(3, [
+      ]),
+      Chapter.new(4, [
+      ]),
+    ]
+  ),
+  Book.new(
+    8,
+    'Hardware and Software',
+    'Without the wind, the grass does not move. Without software hardware is useless.',
+    [
+      Chapter.new(1, [
+      ]),
+      Chapter.new(2, [
+      ]),
+      Chapter.new(3, [
+      ]),
+      Chapter.new(4, [
+      ]),
+    ]
+  ),
+  Book.new(
+    9,
+    'Epilogue',
+    'Time for you to leave.',
+    []
+  ),
 ];
