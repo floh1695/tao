@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 
-import { book, link, note } from './components';
+import { book, hyperlink, note } from './components';
 import pile from './pile';
 
 import hyperscript from './hyperscript'
@@ -12,6 +12,7 @@ const {
   h1,
   header,
   html,
+  link,
   meta,
   p,
   title,
@@ -23,6 +24,7 @@ const createMarkup = (): Element => {
   const markup = html([
     head([
       meta({ charset: 'UTF-8' }),
+      link({ rel: 'stylesheet', href: 'global.css' }),
       title(siteName),
     ]),
     body([
@@ -33,12 +35,12 @@ const createMarkup = (): Element => {
       div([
         note('Alex', [
           'I copied this from ',
-          link({ href: 'http://misspiggy.gsfc.nasa.gov/tao.html' }),
+          hyperlink({ href: 'http://misspiggy.gsfc.nasa.gov/tao.html' }),
           ' and stripped out all of the IMHO extraneous formatting.'
         ]),
         note('Charlie', [
           'I copied this from ',
-          link({ href: 'http://www.mit.edu/~xela/tao.html' }),
+          hyperlink({ href: 'http://www.mit.edu/~xela/tao.html' }),
           ' and updated the markup to be more modern.'
         ]),
       ]),
@@ -54,6 +56,7 @@ const main = async () => {
 
   await fs.mkdir('www', { recursive: true });
   await fs.writeFile('www/index.html', markup.outerHTML);
+  await fs.copyFile('static/global.css', 'www/global.css');
 };
 
 main();

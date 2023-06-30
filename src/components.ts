@@ -22,7 +22,7 @@ const {
   span,
 } = hyperscript;
 
-export const link = ({ href, target = '_blank' }: { href: string, target?: string }, content?: Optional<ElementLike>): Element =>
+export const hyperlink = ({ href, target = '_blank' }: { href: string, target?: string }, content?: Optional<ElementLike>): Element =>
   a({ href, target }, content ?? href);
 
 export const note = (author: string, message: ElementLike): Element => {
@@ -64,3 +64,8 @@ export const chapter = (c: Chapter, bookNumber: number): Element => {
 
   return markup;
 };
+
+// export const sidenav = (): Element {
+//   const markup = section([
+//   ])
+// };
