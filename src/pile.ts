@@ -7,6 +7,7 @@ const {
   br,
   code,
   p,
+  q,
 } = hyperscript;
 
 export default [
@@ -87,12 +88,77 @@ export default [
     'After three days without programming, life becomes meaningless.',
     [
       Chapter.new(1, [
+        p([
+          'The programmers of old were mysterious and profound.',
+          ' We cannot fathom their thoughts, so all we do is describe their appearance.',
+        ]),
+        blockquote([
+          'Aware, like a fox crossing the water.',
+          br(),
+          'Alert, like a general on the battlefield.',
+          br(),
+          'Kind, like a hostess greeting her guests.',
+          br(),
+          'Simple, like uncarved blocks of wood.',
+          br(),
+          'Opaque, like black pools in darkened caves.',
+        ]),
+        p('Who can tell the secrets of their hearts and minds?'),
+        p('The answer exists only in Tao.'),
       ]),
       Chapter.new(2, [
+        p([
+          'The Grand Master Turing once dreamed that he was a machine.',
+          ' When he awoke, he exclaimed:',
+        ]),
+        q('I don\'t know whether I am Turing dreaming that I am a machine, or a machine dreaming that I am Turing!'),
       ]),
       Chapter.new(3, [
+        p([
+          'A programmer from a very large computer company went to a software conference and then returned to report to his manager, saying:',
+          ' ',
+          q([
+            'What sort of programmers work for other companies?',
+            ' They behaved badly and were unconcerned with appearances.',
+            ' Their hair was long and unkempt and their clothes were wrinkled and old.',
+            ' They crashed our hospitality suite and they made rude noises during my presentation.',
+          ]),
+        ]),
+        p([
+          'The manager said:',
+          ' ',
+          q([
+            'I should have never sent you to the conference.',
+            ' Those programmers live beyond the physical world.',
+            ' They consider life absurd, an accidental coincidence.',
+            ' They come and go without knowing limitations.',
+            ' Without a care, they live only for their programs.',
+            ' Why should they bother with social conventions?',
+            br(),
+            br(),
+            'They are alive within the Tao.',
+          ]),
+        ]),
       ]),
       Chapter.new(4, [
+        p([
+          'A novice asked the Master:',
+          ' ',
+          q('Here is a programmer that never designs, documents or tests his programs.'),
+          ' Yet all who know him consider him one of the best programmers in the world.',
+          ' Why is this?',
+        ]),
+        p([
+          'The Master replied:',
+          ' ',
+          q([
+            'That programmer has mastered the Tao.',
+            ' He has gone beyond the need for design; he does not become angry when the system crashes, but accepts the universe without concern.',
+            ' He has gone beyond the need for documentation; he no longer cares if anyone else sees his code.',
+            ' He has gone beyond the need for testing; each of his programs are perfect within themselves, serene and elegant, their purpose self-evident.',
+            ' Truly, he has entered the mystery of Tao.',
+          ]),
+        ]),
       ]),
     ]
   ),
