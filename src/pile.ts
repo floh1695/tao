@@ -168,6 +168,43 @@ export default [
     'When a program is being tested, it is too late to make design changes.',
     [
       Chapter.new(1, [
+        p([
+          'There once was a man who went to a computer trade show.',
+          ' Each day as he entered, the man told the guard at the door:',
+        ]),
+        p(q([
+          'I am a great thief, renowned for my feats of shoplifting.',
+          ' Be forewarned, for this trade show shall not escape unplundered.',
+        ])),
+        p([
+          'This speech disturbed the guard greatly, because there were millions of dollars of computer equipment inside, so he watched the man carefully.',
+          ' But the man merely wandered from booth to booth, humming quietly to himself.',
+        ]),
+        p('When the man left, the guard took him aside and searched his clothes, but nothing was to be found.'),
+        p([
+          'On the next day of the trade show, the man returned and chided the guard, saying:',
+          ' ',
+          q('I escaped with a vast booty yesterday, but today will be even better.'),
+          ' So the guard watched him ever more closely, but to no avail.',
+        ]),
+        p([
+          'On the final day of the trade show, the guard could restrain his curiosity no longer.',
+          ' ',
+          q('Sir Thief,'),
+          ' he said,',
+          ' ',
+          q([
+            'I am so perplexed, I cannot live in peace.',
+            ' Please enlighten me.',
+            ' What is it that you are stealing?',
+          ]),
+        ]),
+        p([
+          'The man smiled.',
+          ' ',
+          q('I am stealing ideas,'),
+          ' he said.',
+        ]),
       ]),
       Chapter.new(2, [
       ]),
