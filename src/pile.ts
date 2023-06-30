@@ -111,7 +111,7 @@ export default [
           'The Grand Master Turing once dreamed that he was a machine.',
           ' When he awoke, he exclaimed:',
         ]),
-        q('I don\'t know whether I am Turing dreaming that I am a machine, or a machine dreaming that I am Turing!'),
+        p(q('I don\'t know whether I am Turing dreaming that I am a machine, or a machine dreaming that I am Turing!')),
       ]),
       Chapter.new(3, [
         p([
