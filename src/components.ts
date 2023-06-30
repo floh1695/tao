@@ -28,7 +28,7 @@ export const hyperlink = ({ href, target = '_blank' }: { href: string, target?: 
 export const note = (author: string, message: ElementLike): Element => {
   const markup = div([
     div([
-      span('Note:'),
+      span('Note: '),
       q(message),
     ]),
     span(`${emDash}${author}`),
