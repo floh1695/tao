@@ -50,7 +50,7 @@ const createMarkup = (): Element => {
         ]),
       ]),
       main(pile.map(book)),
-      footer(hyperlink({ href: 'https://github.com/floh1695/tao' }, 'Check out the source code on GitHub!')),
+      footer({ class: 'box' }, hyperlink({ href: 'https://github.com/floh1695/tao' }, 'Check out the source code on GitHub!')),
     ]),
   ]);
 
