@@ -4,6 +4,7 @@ import { book, hyperlink, note } from './components';
 import pile from './pile';
 
 import hyperscript from './hyperscript'
+import { stat } from 'fs';
 const {
   b,
   body,
@@ -27,6 +28,7 @@ const createMarkup = (): Element => {
     head([
       meta({ charset: 'UTF-8' }),
       link({ rel: 'stylesheet', href: 'global.css' }),
+      link({ rel: 'stylesheet', href: 'reset.css' }),
       title(siteName),
     ]),
     body([
@@ -54,12 +56,22 @@ const createMarkup = (): Element => {
   return markup;
 };
 
-const start = async () => {
+const start = async (): Promise<void> => {
   const markup = createMarkup();
 
-  await fs.mkdir('www', { recursive: true });
-  await fs.writeFile('www/index.html', markup.outerHTML);
-  await fs.copyFile('static/global.css', 'www/global.css');
+  const pitchFrom = 'www';
+  await fs.mkdir(pitchFrom, { recursive: true });
+
+  fs.writeFile(`${pitchFrom}/index.html`, markup.outerHTML);
+  copyFiles('static', pitchFrom);
+};
+
+const copyFiles = async (fromDir: string, toDir: string): Promise<void> => {
+  const staticFiles = await fs.readdir(fromDir, { recursive: true });
+
+  staticFiles
+    .map(file => ({ from: `${fromDir}/${file}`, to: `${toDir}/${file}` }))
+    .forEach(({ from, to }) => fs.copyFile(from, to));
 };
 
 start();
