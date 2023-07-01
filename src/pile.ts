@@ -320,6 +320,36 @@ export const book3 =
   )
   .addChapter(
     Chapter.new(4, [
+      p([
+        'A manager went to the Master Programmer and showed him the requirements document for a new application.',
+        ' ',
+        'The manager asked the Master:',
+        ' ',
+        q('How long will it take to design this system if I assign five programmers to it?'),
+      ]),
+      p([
+        q('It will take one year,'),
+        ' ',
+        'said the Master promptly.'
+      ]),
+      p(q([
+        'But we need this system immediately or even sooner!',
+        ' ',
+        'How long will it take if I assign ten programmers to it?',
+      ])),
+      p([
+        'The Master Programmer frowned.',
+        ' ',
+        q('In that case, it will take two years.'),
+      ]),
+      p(q('And what if I assign a hundred programmers to it?')),
+      p([
+        'The Master Programmer shrugged.',
+        ' ',
+        q('Then the design will never be completed,'),
+        ' ',
+        'he said.'
+      ]),
     ])
   );
 
