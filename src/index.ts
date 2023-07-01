@@ -4,7 +4,6 @@ import { book, hyperlink, note } from './components';
 import pile from './pile';
 
 import hyperscript from './hyperscript'
-import { stat } from 'fs';
 const {
   b,
   body,

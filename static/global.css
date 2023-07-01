@@ -1,3 +1,46 @@
-body {
+h1, h2, h3, h4, h5, h6 {
   text-align: center;
+}
+
+p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+q {
+  font-style: italic;
+}
+
+blockquote {
+  margin-left: 1rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  color: white;
+  background-color: black;
+}
+
+.box {
+  --spacing: calc(0.25rem + 1vw);
+
+  margin: calc(var(--spacing) / 2);
+  border: 1px solid;
+  padding: var(--spacing);
+}
+
+.book {
+  color: black;
+  background-color: grey;
+  border-color: darkslategrey;
+}
+
+.chapter {
+  color: black;
+  background-color: lightgrey;
+  border-color: grey;
 }

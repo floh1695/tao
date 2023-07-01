@@ -1,3 +1,1 @@
-export type ElementString = Element | string;
-
-export type ElementLike = ElementString | Array<ElementString>;
+export type ElementLike = Element | Array<ElementLike> | string | number;
