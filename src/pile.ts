@@ -10,7 +10,7 @@ const {
   q,
 } = hyperscript;
 
-export default [
+export const book1 =
   Book.new(
     1,
     'The Silent Void',
@@ -97,7 +97,9 @@ export default [
         ]),
       ]),
     ]
-  ),
+  );
+
+export const book2 =
   Book.new(
     2,
     'The Ancient Masters',
@@ -193,7 +195,9 @@ export default [
         ]),
       ]),
     ]
-  ),
+  );
+
+export const book3 =
   Book.new(
     3,
     'Design',
@@ -306,7 +310,9 @@ export default [
       Chapter.new(4, [
       ]),
     ]
-  ),
+  );
+
+export const book4 =
   Book.new(
     4,
     'Coding',
@@ -321,7 +327,9 @@ export default [
       Chapter.new(4, [
       ]),
     ]
-  ),
+  );
+
+export const book5 =
   Book.new(
     5,
     'Maintenance',
@@ -336,7 +344,9 @@ export default [
       Chapter.new(4, [
       ]),
     ]
-  ),
+  );
+
+export const book6 =
   Book.new(
     6,
     'Management',
@@ -351,7 +361,9 @@ export default [
       Chapter.new(4, [
       ]),
     ]
-  ),
+  );
+
+export const book7 =
   Book.new(
     7,
     'Corporate Wisdom',
@@ -366,7 +378,9 @@ export default [
       Chapter.new(4, [
       ]),
     ]
-  ),
+  );
+
+export const book8 =
   Book.new(
     8,
     'Hardware and Software',
@@ -381,11 +395,26 @@ export default [
       Chapter.new(4, [
       ]),
     ]
-  ),
+  );
+
+export const book9 =
   Book.new(
     9,
     'Epilogue',
     'Time for you to leave.',
     []
-  ),
+  );
+
+export const pile = [
+  book1,
+  book2,
+  book3,
+  book4,
+  book5,
+  book6,
+  book7,
+  book8,
+  book9,
 ];
+
+export default pile;
