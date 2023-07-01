@@ -8,6 +8,7 @@ const {
   b,
   body,
   div,
+  footer,
   head,
   h1,
   header,
@@ -45,6 +46,7 @@ const createMarkup = (): Element => {
         ]),
       ]),
       pile.map(book),
+      footer(hyperlink({ href: 'https://github.com/floh1695/tao' }, 'Check out the source code on GitHub!')),
     ]),
   ]);
 
