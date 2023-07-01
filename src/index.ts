@@ -32,7 +32,7 @@ const createMarkup = (): Element => {
     body([
       header([
         h1(siteName),
-        b(p('Translated by Geoffrey James')),
+        p(b('Translated by Geoffrey James')),
         div([
           note('Alex', [
             'I copied this from ',
