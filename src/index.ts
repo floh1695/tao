@@ -33,7 +33,7 @@ const createMarkup = (): Element => {
     body([
       header([
         div({ class: 'top' }, [
-          h1(siteName),
+          h1(hyperlink({ href: '', target: '_self' }, siteName)),
           p(b('Translated by Geoffrey James')),
         ]),
         div([
