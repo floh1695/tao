@@ -2,6 +2,14 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+a {
+  --time: 300ms;
+
+  color: blue;
+
+  transition: color var(--time) ease-in-out;
+}
+
 p {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -16,6 +24,8 @@ blockquote {
 }
 
 body {
+  font: 1rem Helvetica, sans-serif;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,6 +37,30 @@ body {
 
 body > header > div.top {
   text-align: center;
+}
+
+body > header > div.top h1 a {
+  color: white;
+}
+
+body > header > div.top h1 a:hover {
+  color: skyblue;
+}
+
+body > header a {
+  color: skyblue;
+}
+
+body > header a:hover {
+  color: color-mix(in srgb, skyblue 70%, blue 30%);
+}
+
+body > footer a {
+  color: white;
+}
+
+body > footer a:hover {
+  color: skyblue;
 }
 
 .box {
@@ -47,8 +81,20 @@ body > header > div.top {
   border-color: darkslategrey;
 }
 
+.book a {
+  color: black;
+}
+
+.book a:hover {
+  color: color-mix(in srgb, black 50%, blue 50%);
+}
+
 .chapter {
   color: black;
   background-color: lightgrey;
   border-color: grey;
+}
+
+.chapter a:hover {
+  color: blue;
 }
