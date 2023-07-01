@@ -32,8 +32,10 @@ const createMarkup = (): Element => {
     ]),
     body([
       header([
-        h1(siteName),
-        p(b('Translated by Geoffrey James')),
+        div({ class: 'top' }, [
+          h1(siteName),
+          p(b('Translated by Geoffrey James')),
+        ]),
         div([
           note('Alex', [
             'I copied this from ',

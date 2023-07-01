@@ -26,7 +26,7 @@ export const hyperlink = ({ href, target = '_blank' }: { href: string, target?: 
   a({ href, target }, content ?? href);
 
 export const note = (author: string, message: ElementLike): Element => {
-  const markup = div([
+  const markup = div({ class: 'note box' }, [
     div([
       span('Note: '),
       q(message),

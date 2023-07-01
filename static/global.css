@@ -25,12 +25,20 @@ body {
   background-color: black;
 }
 
+body > header > div.top {
+  text-align: center;
+}
+
 .box {
   --spacing: calc(0.25rem + 1vw);
 
   margin: calc(var(--spacing) / 2);
   border: 1px solid;
   padding: var(--spacing);
+}
+
+.note {
+  background-color: darkslategrey;
 }
 
 .book {
