@@ -70,7 +70,7 @@ export const chapter = (c: Chapter, bookNumber: number): Element => {
   return markup;
 };
 
-export const paragraph = (element: ElementLike, { wrapper }: { wrapper?: (e: ElementLike) => ElementLike }): Element => {
+export const sentences = (element: ElementLike, { wrapper }: { wrapper?: (e: ElementLike) => ElementLike }): Element => {
   const content = Array.isArray(element)
     ? intersperse(' ', element)
     : element;
