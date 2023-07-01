@@ -297,6 +297,26 @@ export const book4 =
   )
   .addChapter(
     Chapter.new(1, [
+      paragraph([
+        'A program should be light and agile, its subroutines connected like a string of pearls.',
+        'The spirit and intent of the program should be retained throughout.',
+        'There should be neither too little nor too much.',
+        'Neither needless loops nor useless variables; neither lack of structure nor overwhelming rigidity.',
+      ], {}),
+      paragraph([
+        'A program should follow the',
+        q('Law of Least Astonishment.'),
+        'What is this law?',
+        'It is simply that the program should always respond to the users in the way that least astonishes them.',
+      ], {}),
+      paragraph([
+        'A program, no matter how complex, should act as a single unit.',
+        'The program should be directed by the logic within rather than by outward appearances.',
+      ], {}),
+      paragraph([
+        'If the program fails in these requirements, it will be in a state of disorder and confusion.',
+        'The only way to correct this is to rewrite the program.',
+      ], {}),
     ])
   )
   .addChapter(
