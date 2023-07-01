@@ -77,6 +77,8 @@ body > footer a:hover {
   margin: calc(var(--spacing) / 2);
   border: 1px solid;
   padding: var(--spacing);
+
+  border-radius: 1vw;
 }
 
 .note {
