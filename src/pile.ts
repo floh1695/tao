@@ -207,6 +207,14 @@ export default [
         ]),
       ]),
       Chapter.new(2, [
+        'There once was a Master Programmer who wrote unstructured programs.',
+        ' A novice programmer, seeking to imitate him, also began to write unstructured programs.',
+        ' When the novice asked the Master to evaluate his progress, the Master criticized him for writing unstructured programs, saying,',
+        ' ',
+        q([
+          'What is appropriate for the Master is not appropriate for the novice.',
+          ' You must understand Tao before transcending structure.',
+        ]),
       ]),
       Chapter.new(3, [
       ]),
