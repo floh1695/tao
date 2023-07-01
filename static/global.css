@@ -63,6 +63,10 @@ body > header a:hover {
   color: color-mix(in srgb, skyblue 70%, blue 30%);
 }
 
+body > footer.box {
+  margin-top: 0;
+}
+
 body > footer a {
   color: white;
 }
