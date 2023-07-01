@@ -65,6 +65,7 @@ body > header a:hover {
 
 body > footer.box {
   margin-top: 0;
+  text-align: center;
 }
 
 body > footer a {
@@ -76,7 +77,7 @@ body > footer a:hover {
 }
 
 .box {
-  --spacing: calc(0.25rem + 1vw);
+  --spacing: calc(0.5rem + 1vw);
 
   margin: calc(var(--spacing) / 2);
   border: 1px solid;
