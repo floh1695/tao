@@ -6,6 +6,7 @@ import { Chapter } from './chapter';
 
 import { emDash } from './unicode';
 
+import { intersperse } from 'ramda';
 import hyperscript from './hyperscript'
 const {
   a,
@@ -65,6 +66,17 @@ export const chapter = (c: Chapter, bookNumber: number): Element => {
     h4({ id }, hyperlink({ href: `#${id}`, target: '_self' }, `${bookNumber}.${c.number}`)),
     c.content,
   ]);
+
+  return markup;
+};
+
+export const paragraph = (element: ElementLike, { wrapper }: { wrapper?: (e: ElementLike) => ElementLike }): Element => {
+  const content = Array.isArray(element)
+    ? intersperse(' ', element)
+    : element;
+
+  const wrapperTrue = wrapper ?? p;
+  const markup = wrapperTrue(content);
 
   return markup;
 };
