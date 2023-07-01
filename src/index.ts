@@ -14,6 +14,7 @@ const {
   header,
   html,
   link,
+  main,
   meta,
   p,
   title,
@@ -32,20 +33,20 @@ const createMarkup = (): Element => {
       header([
         h1(siteName),
         b(p('Translated by Geoffrey James')),
-      ]),
-      div([
-        note('Alex', [
-          'I copied this from ',
-          hyperlink({ href: 'http://misspiggy.gsfc.nasa.gov/tao.html' }),
-          ' and stripped out all of the IMHO extraneous formatting.'
+        div([
+          note('Alex', [
+            'I copied this from ',
+            hyperlink({ href: 'http://misspiggy.gsfc.nasa.gov/tao.html' }),
+            ' and stripped out all of the IMHO extraneous formatting.'
+          ]),
+          note('Charlie', [
+            'I copied this from ',
+            hyperlink({ href: 'http://www.mit.edu/~xela/tao.html' }),
+            ' and updated the markup to be more modern.'
+          ]),
         ]),
-        note('Charlie', [
-          'I copied this from ',
-          hyperlink({ href: 'http://www.mit.edu/~xela/tao.html' }),
-          ' and updated the markup to be more modern.'
-        ]),
       ]),
-      pile.map(book),
+      main(pile.map(book)),
       footer(hyperlink({ href: 'https://github.com/floh1695/tao' }, 'Check out the source code on GitHub!')),
     ]),
   ]);
@@ -53,7 +54,7 @@ const createMarkup = (): Element => {
   return markup;
 };
 
-const main = async () => {
+const start = async () => {
   const markup = createMarkup();
 
   await fs.mkdir('www', { recursive: true });
@@ -61,4 +62,4 @@ const main = async () => {
   await fs.copyFile('static/global.css', 'www/global.css');
 };
 
-main();
+start();
