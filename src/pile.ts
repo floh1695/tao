@@ -260,6 +260,48 @@ export default [
         ]),
       ]),
       Chapter.new(3, [
+        p([
+          'There was once a programmer who was attached to the court of the warlord of Wu.',
+          ' ',
+          'The warlord asked the programmer:',
+          ' ',
+          q('Which is easier to design: an accounting package or an operating system?'),
+        ]),
+        p([
+          q('An operating system,'),
+          ' ',
+          'replied the programmer.',
+        ]),
+        p([
+          'The warlord uttered an exclamation of disbelief.',
+          ' ',
+          q('Surely an accounting package is trivial next to the complexity of an operating system,'),
+          ' ',
+          'he said.'
+        ]),
+        p([
+          q('Not so,'),
+          ' ',
+          'said the programmer,',
+          ' ',
+          q([
+            'When designing an accounting package, the programmer operates as a mediator between people having different ideas:',
+            ' ',
+            'how it must operate, how its reports must appear, and how it must conform to the tax laws.',
+            ' ',
+            'By contrast, an operating system is not limited by outside appearances.',
+            ' ',
+            'When designing an operating system, the programmer seeks the simplest harmony between machine and ideas.',
+            ' ',
+            'This is why an operating system is easier to design.',
+          ]),
+          p([
+            'The warlord of Wu nodded and smiled.',
+            ' ',
+            q('That is all good and well, but which is easier to debug?'),
+          ]),
+          p('The programmer made no reply.'),
+        ])
       ]),
       Chapter.new(4, [
       ]),
