@@ -8,7 +8,6 @@ const {
   blockquote,
   br,
   code,
-  p,
   q,
   span,
 } = hyperscript;
