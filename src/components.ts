@@ -41,9 +41,9 @@ export const note = (author: string, message: ElementLike): Element => {
 export const book = (bk: Book): Element => {
   const id = `book${bk.number}`;
 
-  const markup = section({ class: 'book box' }, [
+  const markup = section({ id, class: 'book box' }, [
     header([
-      h2({ id }, hyperlink({ href: `#${id}`, target: '_self' }, ['BOOK ', bk.number])),
+      h2(hyperlink({ href: `#${id}`, target: '_self' }, ['BOOK ', bk.number])),
       h3(bk.name),
     ]),
     p([
@@ -62,8 +62,8 @@ export const book = (bk: Book): Element => {
 export const chapter = (c: Chapter, bookNumber: number): Element => {
   const id = `book${bookNumber}chapter${c.number}`;
 
-  const markup = section({ class: 'chapter box' }, [
-    h4({ id }, hyperlink({ href: `#${id}`, target: '_self' }, `${bookNumber}.${c.number}`)),
+  const markup = section({ id, class: 'chapter box' }, [
+    h4(hyperlink({ href: `#${id}`, target: '_self' }, `${bookNumber}.${c.number}`)),
     c.content,
   ]);
 
