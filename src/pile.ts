@@ -89,11 +89,11 @@ export const book1 =
   );
 
 export const book2 =
-Book.new(
-  2,
-  'The Ancient Masters',
-  'After three days without programming, life becomes meaningless.'
-)
+  Book.new(
+    2,
+    'The Ancient Masters',
+    'After three days without programming, life becomes meaningless.'
+  )
   .addChapter(
     Chapter.new(1, [
       sentences([
