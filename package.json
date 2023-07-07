@@ -27,11 +27,11 @@
   "devDependencies": {
     "@types/hyperscript": "^0.0.4",
     "@types/node": "^20.3.2",
+    "@types/ramda": "^0.29.3",
     "@types/react": "18.2.14",
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@types/ramda": "^0.29.3",
     "fs": "^0.0.1-security",
     "hyperscript": "^2.0.2",
     "hyperscript-helpers": "^3.0.3",
