@@ -1,7 +1,12 @@
 import seconds from '../src/seconds';
+import RootLayout from './layout';
 
 export default function Page() {
-  return <h1>Hello, Next.js!</h1>;
+  return (
+    <RootLayout>
+      <h1>Hello, Next.js!</h1>
+    </RootLayout>
+  );
 };
 
 export async function getStaticProps() {
