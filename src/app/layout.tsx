@@ -8,9 +8,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      {/* <head>
-        <title>The Tao of Programming</title>
-      </head> */}
       <body>
         {children}
       </body>

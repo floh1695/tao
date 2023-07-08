@@ -1,8 +1,5 @@
 const path = require('path')
 
-// /** @type {(s: string) => string} */
-// const relativePath = (file) => path.join(__dirname, file);
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   sassOptions: {
