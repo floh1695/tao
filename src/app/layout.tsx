@@ -1,5 +1,5 @@
-import '../styles/reset.scss';
-import '../styles/global.scss';
+import '@styles/reset.scss';
+import '@styles/global.scss';
 
 export default function RootLayout({
   children,
@@ -8,11 +8,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <head>
-        <link rel="canonical" href="tao.charlesbayley.dev" />
-      </head>
+      {/* <head>
+        <title>The Tao of Programming</title>
+      </head> */}
       <body>
-        <header></header>
         {children}
       </body>
     </html>
