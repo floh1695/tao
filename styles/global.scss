@@ -1,3 +1,7 @@
+#header {
+  text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
@@ -55,11 +59,11 @@ body > header > div.top h1 a:hover {
   color: skyblue;
 }
 
-body > header a {
+body > header a, .note a {
   color: skyblue;
 }
 
-body > header a:hover {
+body > header a:hover, .note a:hover {
   color: color-mix(in srgb, skyblue 70%, blue 30%);
 }
 

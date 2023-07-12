@@ -7,6 +7,8 @@ const nextConfig = {
   },
   webpack: config => {
     config.resolve.alias['@'] = path.resolve('src');
+    config.resolve.alias['@components'] = path.resolve('src/components');
+
     config.resolve.alias['@styles'] = path.resolve('styles');
 
     return config;

@@ -8,8 +8,6 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>{String(metadata.title)}</h1>
-      <p><b>Translated by Geoffrey James</b></p>
     </>
   );
 };
