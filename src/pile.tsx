@@ -6,75 +6,6 @@ export const book1 =
     'The Silent Void',
     'When you have learned to snatch the error code from the trap frame, it will be time for you to leave.'
   )
-  // .addChapter(
-  //   Chapter.new(1, [
-  //     sentences([
-  //       'Something mysterious is formed, born in the silent void.',
-  //       'Waiting alone and unmoving, it is at once still and yet in constant motion.',
-  //       'It is the source of all programs.',
-  //       'I do not know its name, so I will call it the Tao of Programming.',
-  //     ], {}),
-  //     blockquote([
-  //       sentences('If the Tao is great, then the operating system is great.', {}),
-  //       sentences('If the operating system is great, then the compiler is great.', {}),
-  //       sentences('If the compiler is great, then the application is great.', {}),
-  //       sentences('The user is pleased, and there is harmony in the world.', {}),
-  //     ]),
-  //     sentences('The Tao of Programming flows far away and returns on the wind of morning.', {}),
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(2, [
-  //     sentences([
-  //       'The Tao gave birth to machine language.',
-  //       'Machine language gave birth to the assembler.'
-  //     ], {}),
-  //     sentences([
-  //       'The assembler gave birth to the compiler.',
-  //       'Now there are ten thousand languages.',
-  //     ], {}),
-  //     sentences([
-  //       'Each language has its purpose, however humble.',
-  //       'Each language expresses the Yin and Yang of software.',
-  //       'Each language has its place within the Tao.',
-  //     ], {}),
-  //     sentences([
-  //       'But do not program in',
-  //       code('COBOL'),
-  //       'if you can avoid it.'
-  //     ], {}),
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(3, [
-  //     sentences([
-  //       'In the beginning was the Tao.',
-  //       'The Tao gave birth to Space and Time.',
-  //     ], {}),
-  //     sentences('Therefore Space and Time are the Yin and Yang of programming.', {}),
-  //     sentences([
-  //       'Programmers that do not comprehend the Tao are always running out of time and space for their programs.',
-  //       'Programmers that comprehend the Tao always have enough time and space to accomplish their goals.',
-  //     ], {}),
-  //     sentences('How could it be otherwise?', {}),
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(4, [
-  //     sentences([
-  //       'The wise programmer is told about Tao and follows it.',
-  //       'The average programmer is told about Tao and searches for it.',
-  //       'The foolish programmer is told about Tao and laughs at it.',
-  //     ], {}),
-  //     sentences('If it were not for laughter, there would be no Tao.', {}),
-  //     sentences([
-  //       'The highest sounds are hardest to hear.',
-  //       'Going forward is a way to retreat.',
-  //       'Great talent shows itself late in life.',
-  //       'Even a perfect program still has bugs.',
-  //     ], {}),
-  //   ])
-  // )
   .addNextChapter(
     <>
       <p>Something mysterious is formed, born in the silent void. Waiting alone and unmoving, it is at once still and yet in constant motion. It is the source of all programs. I do not know its name, so I will call it the Tao of Programming.</p>
@@ -89,16 +20,27 @@ export const book1 =
   )
   .addNextChapter(
     <>
+      <p>The Tao gave birth to machine language. Machine language gave birth to the assembler.</p>
+      <p>The assembler gave birth to the compiler. Now there are ten thousand languages.</p>
+      <p>Each language has its purpose, however humble. Each language expresses the Yin and Yang of software. Each language has its place within the Tao.</p>
+      <p>But do not program in <code>COBOL</code> if you can avoid it.</p>
     </>
   )
   .addNextChapter(
     <>
+      <p>In the beginning was the Tao. The Tao gave birth to Space and Time.</p>
+      <p>Therefore Space and Time are the Yin and Yang of programming.</p>
+      <p>Programmers that do not comprehend the Tao are always running out of time and space for their programs. Programmers that comprehend the Tao always have enough time and space to accomplish their goals.</p>
+      <p>How could it be otherwise?</p>
     </>
   )
   .addNextChapter(
     <>
+      <p>The wise programmer is told about Tao and follows it. The average programmer is told about Tao and searches for it. The foolish programmer is told about Tao and laughs at it.</p>
+      <p>If it were not for laughter, there would be no Tao.</p>
+      <p>The highest sounds are hardest to hear. Going forward is a way to retreat. Great talent shows itself late in life. Even a perfect program still has bugs.</p>
     </>
-  )
+  );
 
 export const book2 =
   Book.new(
