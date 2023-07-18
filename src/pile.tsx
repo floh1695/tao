@@ -48,81 +48,45 @@ export const book2 =
     'The Ancient Masters',
     'After three days without programming, life becomes meaningless.'
   )
-  // .addChapter(
-  //   Chapter.new(1, [
-  //     sentences([
-  //       'The programmers of old were mysterious and profound.',
-  //       'We cannot fathom their thoughts, so all we do is describe their appearance.',
-  //     ], {}),
-  //     blockquote([
-  //       sentences('Aware, like a fox crossing the water.', {}),
-  //       sentences('Alert, like a general on the battlefield.', {}),
-  //       sentences('Kind, like a hostess greeting her guests.', {}),
-  //       sentences('Simple, like uncarved blocks of wood.', {}),
-  //       sentences('Opaque, like black pools in darkened caves.', {}),
-  //     ]),
-  //     sentences('Who can tell the secrets of their hearts and minds?', {}),
-  //     sentences('The answer exists only in Tao.', {}),
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(2, [
-  //     sentences([
-  //       'The Grand Master Turing once dreamed that he was a machine.',
-  //       'When he awoke, he exclaimed:',
-  //     ], {}),
-  //     sentences(q('I don\'t know whether I am Turing dreaming that I am a machine, or a machine dreaming that I am Turing!'), {}),
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(3, [
-  //     sentences([
-  //       'A programmer from a very large computer company went to a software conference and then returned to report to his manager, saying:',
-  //       q(sentences([
-  //         'What sort of programmers work for other companies?',
-  //         'They behaved badly and were unconcerned with appearances.',
-  //         'Their hair was long and unkempt and their clothes were wrinkled and old.',
-  //         'They crashed our hospitality suite and they made rude noises during my presentation.',
-  //       ], { wrapper: span })),
-  //     ], {}),
-  //     sentences([
-  //       'The manager said:',
-  //       q(sentences([
-  //         'I should have never sent you to the conference.',
-  //         'Those programmers live beyond the physical world.',
-  //         'They consider life absurd, an accidental coincidence.',
-  //         'They come and go without knowing limitations.',
-  //         'Without a care, they live only for their programs.',
-  //         [
-  //           'Why should they bother with social conventions?',
-  //           br(),
-  //           br(),
-  //           'They are alive within the Tao.',
-  //         ],
-  //       ], { wrapper: span })),
-  //     ], {}),
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(4, [
-  //     sentences([
-  //       'A novice asked the Master:',
-  //       q('Here is a programmer that never designs, documents or tests his programs.'),
-  //       'Yet all who know him consider him one of the best programmers in the world.',
-  //       'Why is this?',
-  //     ], {}),
-  //     sentences([
-  //       'The Master replied:',
-  //       q(sentences([
-  //         'That programmer has mastered the Tao.',
-  //         'He has gone beyond the need for design; he does not become angry when the system crashes, but accepts the universe without concern.',
-  //         'He has gone beyond the need for documentation; he no longer cares if anyone else sees his code.',
-  //         'He has gone beyond the need for testing; each of his programs are perfect within themselves, serene and elegant, their purpose self-evident.',
-  //         'Truly, he has entered the mystery of Tao.',
-  //       ], { wrapper: span })),
-  //     ], {}),
-  //   ])
-  // );
+  .addNextChapter(
+    <>
+      <p>The programmers of old were mysterious and profound. We cannot fathom their thoughts, so all we do is describe their appearance.</p>
+      <blockquote>
+        <p>Aware, like a fox crossing the water.</p>
+        <p>Alert, like a general on the battlefield.</p>
+        <p>Kind, like a hostess greeting her guests.</p>
+        <p>Simple, like uncarved blocks of wood.</p>
+        <p>Opaque, like black pools in darkened caves.</p>
+      </blockquote>
+      <p>Who can tell the secrets of their hearts and minds?</p>
+      <p>The answer exists only in Tao.</p>
+    </>
+  )
+  .addNextChapter(
+    <>
+      <p>The Grand Master Turing once dreamed that he was a machine. When he awoke, he exclaimed:</p>
+      <q>I don't know whether I am Turing dreaming that I am a machine, or a machine dreaming that I am Turing!</q>
+    </>
+  )
+  .addNextChapter(
+    <>
+      <p>A programmer from a very large computer company went to a software conference and then returned to report to his manager, saying: What sort of programmers work for other companies? They behaved badly and were unconcerned with appearances. Their hair was long and unkempt and their clothes were wrinkled and old. They crashed our hospitality suite and they made rude noises during my presentation.</p>
+      <p>
+        The manager said: <q>
+          I should have never sent you to the conference. Those programmers live beyond the physical world. They consider life absurd, an accidental coincidence. They come and go without knowing limitations. Without a care, they live only for their programs. Why should they bother with social conventions?
+          <br />
+          <br />
+          They are alive within the Tao.
+        </q>
+      </p>
+    </>
+  )
+  .addNextChapter(
+    <>
+      <p>A novice asked the Master: <q>Here is a programmer that never designs, documents or tests his programs. Yet all who know him consider him one of the best programmers in the world. Why is this?</q></p>
+      <p>The Master replied: <q>That programmer has mastered the Tao. He has gone beyond the need for design; he does not become angry when the system crashes, but accepts the universe without concern. He has gone beyond the need for documentation; he no longer cares if anyone else sees his code. He has gone beyond the need for testing; each of his programs are perfect within themselves, serene and elegant, their purpose self-evident. Truly, he has entered the mystery of Tao.</q></p>
+    </>
+  )
 
 export const book3 =
   Book.new(
