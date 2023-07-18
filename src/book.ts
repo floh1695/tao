@@ -1,19 +1,30 @@
-import { Optional } from './optional';
+import { Optional } from '@/optional';
 
-import { Chapter } from './chapter';
+import { Chapter } from '@/chapter';
+
+import React from 'react';
 
 export type Book = {
   number: number,
   name: string,
   spaken: string,
   chapters: Array<Chapter>,
-  addChapter: (c: Chapter) => Book;
+  addChapter: (c: Chapter) => Book,
+  addNextChapter: (content: React.ReactNode) => Book,
 };
 
-export const addChapter = (bk: Book, c: Chapter) => {
-  bk.chapters.push(c);
-  return bk;
+export const addChapter = (book: Book, c: Chapter) => {
+  book.chapters.push(c);
+  return book;
 }
+
+export const addNextChapter = (book: Book, content: React.ReactNode) => {
+  const chapterNumber = book.chapters.length + 1;
+  const chapter = Chapter.new(chapterNumber, content);
+  book.addChapter(chapter);
+
+  return book;
+};
 
 export const Book = {
   new: (number: number, name: string, spaken: string, chapters?: Optional<Array<Chapter>>): Book => {
@@ -23,6 +34,7 @@ export const Book = {
       spaken,
       chapters: chapters ?? [],
       addChapter: (c: Chapter) => addChapter(book, c),
+      addNextChapter: (c: React.ReactNode) => addNextChapter(book, c),
     };
 
     return book;

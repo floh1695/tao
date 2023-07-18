@@ -1,12 +1,12 @@
-import { ElementLike } from './element';
+import React from 'react';
 
 export type Chapter = {
   number: number,
-  content: ElementLike,
+  content: React.ReactNode,
 };
 
 export const Chapter = {
-  new: (number: number, content: ElementLike): Chapter => ({
+  new: (number: number, content: React.ReactNode): Chapter => ({
     number,
     content,
   }),

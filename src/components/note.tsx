@@ -1,5 +1,6 @@
 import seconds from '@/seconds';
 import unicode from '@/unicode';
+import React from 'react';
 
 export default function Note({
   children,
@@ -24,4 +25,3 @@ export async function getStaticProps() {
     revalidate: seconds.hours(1),
   };
 };
-
