@@ -94,117 +94,42 @@ export const book3 =
     'Design',
     'When a program is being tested, it is too late to make design changes.'
   )
-  // .addChapter(
-  //   Chapter.new(1, [
-  //     sentences([
-  //       'There once was a man who went to a computer trade show.',
-  //       'Each day as he entered, the man told the guard at the door:',
-  //     ], {}),
-  //     sentences(q(sentences([
-  //       'I am a great thief, renowned for my feats of shoplifting.',
-  //       'Be forewarned, for this trade show shall not escape unplundered.',
-  //     ], { wrapper: span })), {}),
-  //     sentences([
-  //       'This speech disturbed the guard greatly, because there were millions of dollars of computer equipment inside, so he watched the man carefully.',
-  //       'But the man merely wandered from booth to booth, humming quietly to himself.',
-  //     ], {}),
-  //     sentences('When the man left, the guard took him aside and searched his clothes, but nothing was to be found.', {}),
-  //     sentences([
-  //       'On the next day of the trade show, the man returned and chided the guard, saying:',
-  //       q('I escaped with a vast booty yesterday, but today will be even better.'),
-  //       'So the guard watched him ever more closely, but to no avail.',
-  //     ], {}),
-  //     sentences([
-  //       'On the final day of the trade show, the guard could restrain his curiosity no longer.',
-  //       q('Sir Thief,'),
-  //       'he said,',
-  //       q(sentences([
-  //         'I am so perplexed, I cannot live in peace.',
-  //         'Please enlighten me.',
-  //         'What is it that you are stealing?',
-  //       ], { wrapper: span })),
-  //     ], {}),
-  //     sentences([
-  //       'The man smiled.',
-  //       q('I am stealing ideas,'),
-  //       'he said.',
-  //     ], {}),
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(2, [
-  //     sentences([
-  //       'There once was a Master Programmer who wrote unstructured programs.',
-  //       'A novice programmer, seeking to imitate him, also began to write unstructured programs.',
-  //       'When the novice asked the Master to evaluate his progress, the Master criticized him for writing unstructured programs, saying,',
-  //       q(sentences([
-  //         'What is appropriate for the Master is not appropriate for the novice.',
-  //         'You must understand Tao before transcending structure.',
-  //       ], { wrapper: span })),
-  //     ], {}),
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(3, [
-  //     sentences([
-  //       'There was once a programmer who was attached to the court of the warlord of Wu.',
-  //       'The warlord asked the programmer:',
-  //       q('Which is easier to design: an accounting package or an operating system?'),
-  //     ], {}),
-  //     sentences([
-  //       q('An operating system,'),
-  //       'replied the programmer.',
-  //     ], {}),
-  //     sentences([
-  //       'The warlord uttered an exclamation of disbelief.',
-  //       q('Surely an accounting package is trivial next to the complexity of an operating system,'),
-  //       'he said.'
-  //     ], {}),
-  //     sentences([
-  //       q('Not so,'),
-  //       'said the programmer,',
-  //       q(sentences([
-  //         'When designing an accounting package, the programmer operates as a mediator between people having different ideas:',
-  //         'how it must operate, how its reports must appear, and how it must conform to the tax laws.',
-  //         'By contrast, an operating system is not limited by outside appearances.',
-  //         'When designing an operating system, the programmer seeks the simplest harmony between machine and ideas.',
-  //         'This is why an operating system is easier to design.',
-  //       ], { wrapper: span })),
-  //     ], {}),
-  //     sentences([
-  //       'The warlord of Wu nodded and smiled.',
-  //       q('That is all good and well, but which is easier to debug?'),
-  //     ], {}),
-  //     sentences('The programmer made no reply.', {}),
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(4, [
-  //     sentences([
-  //       'A manager went to the Master Programmer and showed him the requirements document for a new application.',
-  //       'The manager asked the Master:',
-  //       q('How long will it take to design this system if I assign five programmers to it?'),
-  //     ], {}),
-  //     sentences([
-  //       q('It will take one year,'),
-  //       'said the Master promptly.'
-  //     ], {}),
-  //     sentences(q(sentences([
-  //       'But we need this system immediately or even sooner!',
-  //       'How long will it take if I assign ten programmers to it?',
-  //     ], { wrapper: span })), {}),
-  //     sentences([
-  //       'The Master Programmer frowned.',
-  //       q('In that case, it will take two years.'),
-  //     ], {}),
-  //     sentences(q('And what if I assign a hundred programmers to it?'), {}),
-  //     sentences([
-  //       'The Master Programmer shrugged.',
-  //       q('Then the design will never be completed,'),
-  //       'he said.'
-  //     ], {}),
-  //   ])
-  // );
+  .addNextChapter(
+    <>
+      <p>There once was a man who went to a computer trade show. Each day as he entered, the man told the guard at the door:</p>
+      <q>I am a great thief, renowned for my feats of shoplifting. Be forewarned, for this trade show shall not escape unplundered.</q>
+      <p>This speech disturbed the guard greatly, because there were millions of dollars of computer equipment inside, so he watched the man carefully. But the man merely wandered from booth to booth, humming quietly to himself.</p>
+      <p>When the man left, the guard took him aside and searched his clothes, but nothing was to be found.</p>
+      <p>On the next day of the trade show, the man returned and chided the guard, saying: <q>I escaped with a vast booty yesterday, but today will be even better.</q> So the guard watched him ever more closely, but to no avail.</p>
+      <p>On the final day of the trade show, the guard could restrain his curiosity no longer. <q>Sir Thief,</q></p> he said, <q>I am so perplexed, I cannot live in peace. Please enlighten me. What is it that you are stealing?</q>
+      <p>The man smiled. <q>I am stealing ideas,</q> he said.</p>
+    </>
+  )
+  .addNextChapter(
+    <>
+      <p>There once was a Master Programmer who wrote unstructured programs. A novice programmer, seeking to imitate him, also began to write unstructured programs. When the novice asked the Master to evaluate his progress, the Master criticized him for writing unstructured programs, saying, <q>What is appropriate for the Master is not appropriate for the novice. You must understand Tao before transcending structure.</q></p>
+    </>
+  )
+  .addNextChapter(
+    <>
+      <p>There was once a programmer who was attached to the court of the warlord of Wu. The warlord asked the programmer: <q>Which is easier to design: an accounting package or an operating system?</q></p>
+      <p><q>An operating system,</q> replied the programmer.</p>
+      <p>The warlord uttered an exclamation of disbelief. <q>Surely an accounting package is trivial next to the complexity of an operating system,</q> he said.</p>
+      <p><q>Not so,</q> said the programmer, <q>When designing an accounting package, the programmer operates as a mediator between people having different ideas: how it must operate, how its reports must appear, and how it must conform to the tax laws. By contrast, an operating system is not limited by outside appearances. When designing an operating system, the programmer seeks the simplest harmony between machine and ideas. This is why an operating system is easier to design.</q></p>
+      <p>The warlord of Wu nodded and smiled. <q>That is all good and well, but which is easier to debug?</q></p>
+      <p>The programmer made no reply.</p>
+    </>
+  )
+  .addNextChapter(
+    <>
+      <p>A manager went to the Master Programmer and showed him the requirements document for a new application. The manager asked the Master: <q>How long will it take to design this system if I assign five programmers to it?</q></p>
+      <p><q>It will take one year,</q> said the Master promptly.</p>
+      <q>But we need this system immediately or even sooner! How long will it take if I assign ten programmers to it?</q>
+      <p>The Master Programmer frowned. <q>In that case, it will take two years.</q></p>
+      <q>And what if I assign a hundred programmers to it?</q>
+      <p>The Master Programmer shrugged. <q>Then the design will never be completed,</q> he said.</p>
+    </>
+  );
 
 export const book4 =
   Book.new(
