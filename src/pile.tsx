@@ -186,22 +186,22 @@ export const book5 =
     'Maintenance',
     'Though a program be but three lines long, someday it will have to be maintained.',
   )
-  // .addChapter(
-  //   Chapter.new(1, [
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(2, [
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(3, [
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(4, [
-  //   ])
-  // );
+  .addNextChapter(
+    <>
+    </>
+  )
+  .addNextChapter(
+    <>
+    </>
+  )
+  .addNextChapter(
+    <>
+    </>
+  )
+  .addNextChapter(
+    <>
+    </>
+  );
 
 export const book6 =
   Book.new(
@@ -209,22 +209,22 @@ export const book6 =
     'Management',
     'Let the programmers be many and the managers few -- then all will be productive.'
   )
-  // .addChapter(
-  //   Chapter.new(1, [
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(2, [
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(3, [
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(4, [
-  //   ])
-  // );
+  .addNextChapter(
+    <>
+    </>
+  )
+  .addNextChapter(
+    <>
+    </>
+  )
+  .addNextChapter(
+    <>
+    </>
+  )
+  .addNextChapter(
+    <>
+    </>
+  );
 
 export const book7 =
   Book.new(
@@ -232,22 +232,22 @@ export const book7 =
     'Corporate Wisdom',
     'You can demonstrate a program for a corporate executive, but you can\'t make him computer literate.'
   )
-  // .addChapter(
-  //   Chapter.new(1, [
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(2, [
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(3, [
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(4, [
-  //   ])
-  // );
+  .addNextChapter(
+    <>
+    </>
+  )
+  .addNextChapter(
+    <>
+    </>
+  )
+  .addNextChapter(
+    <>
+    </>
+  )
+  .addNextChapter(
+    <>
+    </>
+  );
 
 export const book8 =
   Book.new(
@@ -255,22 +255,22 @@ export const book8 =
     'Hardware and Software',
     'Without the wind, the grass does not move. Without software hardware is useless.'
   )
-  // .addChapter(
-  //   Chapter.new(1, [
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(2, [
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(3, [
-  //   ])
-  // )
-  // .addChapter(
-  //   Chapter.new(4, [
-  //   ])
-  // );
+  .addNextChapter(
+    <>
+    </>
+  )
+  .addNextChapter(
+    <>
+    </>
+  )
+  .addNextChapter(
+    <>
+    </>
+  )
+  .addNextChapter(
+    <>
+    </>
+  );
 
 export const book9 =
   Book.new(
