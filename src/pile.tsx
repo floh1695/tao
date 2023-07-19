@@ -189,18 +189,40 @@ export const book5 =
   )
   .addNextChapter(
     <>
+      <blockquote>
+        <p>A well-used door needs no oil on its hinges.</p>
+        <p>A swift-flowing stream does not grow stagnant.</p>
+        <p>A deer blends perfectly into the forest colors.</p>
+        <p>Software rots if not used.</p>
+      </blockquote>
+      <p>These are great mysteries.</p>
     </>
   )
   .addNextChapter(
     <>
+      <p>A manager asked a programmer how long it would take him to finish the program on which he was working. <q>I will be finished tomorrow,</q> the programmer promptly replied.</p>
+      <p><q>I think you are being unrealistic,</q> said the manager, <q>Truthfully, how long will it take?</q></p>
+      <p>The programmer thought for a moment. <q>I have some features that I wish to add. This will take at least two weeks,</q> he finally said.</p>
+      <p><q>Even that is too much to expect,</q> insisted the manager, <q>I will be satisfied if you simply tell me when the program is complete.</q></p>
+      <p>The programmer agreed to this.</p>
+      <p>Several years later, the manager retired. On the way to his retirement luncheon, he discovered the programmer asleep at his terminal. He had been programming all night.</p>
     </>
   )
   .addNextChapter(
     <>
+      <p>A novice programmer was once assigned to code a simple financial package.</p>
+      <p>The novice worked furiously for many days, but when his Master reviewed his program, he discovered it contained a screen editor, a set of generalized graphics routines, and an artificial intelligence interface, but not the slightest hint of anything financial.</p>
+      <p>When the Master asked about this, the novice became indignant. <q>Don't be so impatient,</q> he said, <q>I'll put in the financial stuff eventually.</q></p>
     </>
   )
   .addNextChapter(
     <>
+      <blockquote>
+        <p>Does a good farmer neglect a crop he has planted?</p>
+        <p>Does a good teacher overlook even the most humble student?</p>
+        <p>Does a good father allow a single child to starve?</p>
+        <p>Does a good programmer refuse to maintain his code?</p>
+      </blockquote>
     </>
   );
 
