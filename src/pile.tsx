@@ -65,7 +65,7 @@ export const book2 =
   .addNextChapter(
     <>
       <p>The Grand Master Turing once dreamed that he was a machine. When he awoke, he exclaimed:</p>
-      <q>I don't know whether I am Turing dreaming that I am a machine, or a machine dreaming that I am Turing!</q>
+      <p><q>I don't know whether I am Turing dreaming that I am a machine, or a machine dreaming that I am Turing!</q></p>
     </>
   )
   .addNextChapter(
@@ -97,7 +97,7 @@ export const book3 =
   .addNextChapter(
     <>
       <p>There once was a man who went to a computer trade show. Each day as he entered, the man told the guard at the door:</p>
-      <q>I am a great thief, renowned for my feats of shoplifting. Be forewarned, for this trade show shall not escape unplundered.</q>
+      <p><q>I am a great thief, renowned for my feats of shoplifting. Be forewarned, for this trade show shall not escape unplundered.</q></p>
       <p>This speech disturbed the guard greatly, because there were millions of dollars of computer equipment inside, so he watched the man carefully. But the man merely wandered from booth to booth, humming quietly to himself.</p>
       <p>When the man left, the guard took him aside and searched his clothes, but nothing was to be found.</p>
       <p>On the next day of the trade show, the man returned and chided the guard, saying: <q>I escaped with a vast booty yesterday, but today will be even better.</q> So the guard watched him ever more closely, but to no avail.</p>
@@ -124,9 +124,9 @@ export const book3 =
     <>
       <p>A manager went to the Master Programmer and showed him the requirements document for a new application. The manager asked the Master: <q>How long will it take to design this system if I assign five programmers to it?</q></p>
       <p><q>It will take one year,</q> said the Master promptly.</p>
-      <q>But we need this system immediately or even sooner! How long will it take if I assign ten programmers to it?</q>
+      <p><q>But we need this system immediately or even sooner! How long will it take if I assign ten programmers to it?</q></p>
       <p>The Master Programmer frowned. <q>In that case, it will take two years.</q></p>
-      <q>And what if I assign a hundred programmers to it?</q>
+      <p><q>And what if I assign a hundred programmers to it?</q></p>
       <p>The Master Programmer shrugged. <q>Then the design will never be completed,</q> he said.</p>
     </>
   );
