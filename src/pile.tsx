@@ -234,18 +234,42 @@ export const book6 =
   )
   .addNextChapter(
     <>
+      <blockquote>
+        <p>When managers hold endless meetings, the programmers write games.</p>
+        <p>When accountants speak of quarterly profits, the development budget is about to be cut.</p>
+        <p>When senior scientists talk blue sky, the clouds are about to roll in.</p>
+      </blockquote>
+      <p>Truly, this is not the Tao of Programming.</p>
+      <blockquote>
+        <p>When managers make commitments, game programs are ignored.</p>
+        <p>When accountants make long-range plans, harmony and order are about to be restored.</p>
+        <p>When senior scientists address the problems at hand, the problems will soon be solved.</p>
+      </blockquote>
+      <p>Truly, this is the Tao of Programming.</p>
     </>
   )
   .addNextChapter(
     <>
+      <blockquote>
+        <p>Why are programmers non-productive? Because their time is wasted in meetings.</p>
+        <p>Why are programmers rebellious? Because the management interferes too much.</p>
+        <p>Why are the programmers resigning one by one? Because they are burnt out.</p>
+        <p>Having worked for poor management, they no longer value their jobs.</p>
+      </blockquote>
     </>
   )
   .addNextChapter(
     <>
+      <p>A manager was about to be fired, but a programmer who worked for him wrote a new program that became popular and sold well. As a result, the manager retained his job.</p>
+      <p>The manager tried to give the programmer a bonus, but the programmer refused it, saying, <q>I wrote the program because I thought it was an interesting concept, and thus I expect no reward.</q></p>
+      <p>The manager upon hearing this remarked, <q>This programmer, though he holds a position of small esteem, understands well the proper duty of an employee. Let us promote him to the exalted position of management consultant!</q></p>
+      <p>But when told this, the programmer once more refused, saying, <q>I exist so that I can program. If I were promoted, I would do nothing but waste everyone's time. Can I go now? I have a program that I am working on.</q></p>
     </>
   )
   .addNextChapter(
     <>
+      <p>A manager went to his programmers and told them: <q>As regards to your work hours: you are going to have to come in at nine in the morning and leave at five in the afternoon.</q> At this, all of them became angry and several resigned on the spot.</p>
+      <p>So the manager said: <q>All right, in that case you may set your own working hours, as long as you finish your projects on schedule.</q> The programmers, now satisfied, began to come in at noon and work to the wee hours of the morning.</p>
     </>
   );
 
