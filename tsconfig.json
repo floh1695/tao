@@ -40,6 +40,9 @@
       "@components/*": [
         "./src/components/*",
       ],
+      "@kinds/*": [
+        "./src/kinds/*",
+      ],
       "@style/*": [
         "./style/*",
       ],

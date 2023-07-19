@@ -1,6 +1,7 @@
+import React from 'react';
+
 import seconds from '@/seconds';
 import unicode from '@/unicode';
-import React from 'react';
 
 export default function Note({
   children,

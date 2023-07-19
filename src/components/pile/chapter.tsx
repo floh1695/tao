@@ -1,6 +1,7 @@
-import { Chapter as ChapterType } from '@/chapter';
-import seconds from '@/seconds';
 import React from 'react';
+
+import seconds from '@/seconds';
+import { Chapter as ChapterType } from '@kinds/chapter';
 
 export default function Book({
   chapter,

@@ -1,8 +1,9 @@
 import '@styles/global.scss';
 import '@styles/reset.scss';
 
-import Note from '@components/note';
 import React from 'react';
+
+import Note from '@components/note';
 
 export default function RootLayout({
   children,

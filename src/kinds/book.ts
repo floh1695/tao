@@ -1,8 +1,7 @@
-import { Optional } from '@/optional';
-
-import { Chapter } from '@/chapter';
-
 import React from 'react';
+
+import { Optional } from '@kinds/optional';
+import { Chapter } from '@kinds/chapter';
 
 export type Book = {
   number: number,

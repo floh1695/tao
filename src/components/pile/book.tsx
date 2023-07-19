@@ -1,7 +1,8 @@
-import { Book as BookType } from '@/book';
-import Chapter from '@components/pile/chapter';
-import seconds from '@/seconds';
 import React from 'react';
+
+import seconds from '@/seconds';
+import Chapter from '@components/pile/chapter';
+import { Book as BookType } from '@kinds/book';
 
 export default function Book({
   book,
@@ -9,7 +10,7 @@ export default function Book({
   book: BookType,
 }) {
   const id = `book${book.number}`;
-  const chaptersHtml = book.chapters.map(c => <Chapter chapter={c} bookNumber={book.number}></Chapter>)
+  const chaptersHtml = book.chapters.map((c, i) => <Chapter key={i} chapter={c} bookNumber={book.number} ></Chapter>)
 
   return (
     <section id={id} className='book box'>
