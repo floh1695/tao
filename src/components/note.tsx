@@ -1,6 +1,5 @@
 import React from 'react';
 
-import seconds from '@/seconds';
 import unicode from '@/unicode';
 
 export default function Note({
@@ -18,11 +17,4 @@ export default function Note({
       {unicode.emDash}{author}
     </div>
   );
-};
-
-export async function getStaticProps() {
-  return {
-    props: {},
-    revalidate: seconds.hours(1),
-  };
 };

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import seconds from '@/seconds';
 import { Chapter as ChapterType } from '@kinds/chapter';
 
 export default function Book({
@@ -22,11 +21,4 @@ export default function Book({
       {chapter.content}
     </section>
   );
-};
-
-export async function getStaticProps() {
-  return {
-    props: {},
-    revalidate: seconds.hours(1),
-  };
 };
