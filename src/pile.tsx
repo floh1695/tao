@@ -1,4 +1,4 @@
-import { Book } from '@kinds/book';
+import Book from '@kinds/book';
 
 export const book1 =
   Book.new(

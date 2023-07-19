@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Optional } from '@kinds/optional';
-import { Chapter } from '@kinds/chapter';
+import Optional from '@kinds/optional';
+import Chapter from '@kinds/chapter';
 
 export type Book = {
   number: number,
@@ -39,3 +39,5 @@ export const Book = {
     return book;
   },
 };
+
+export default Book;

@@ -11,3 +11,5 @@ export const Chapter = {
     content,
   }),
 };
+
+export default Chapter;

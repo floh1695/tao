@@ -1,15 +1,15 @@
 import React from 'react';
 
 import seconds from '@/seconds';
-import Book from '@components/pile/book';
-import { Book as BookType } from '@kinds/book';
+import BookC from '@components/pile/book';
+import BookT from '@kinds/book';
 
 export default function Pile({
   pile,
 }: {
-  pile: BookType[],
+  pile: BookT[],
 }) {
-  return pile.map((b, i) => <Book key={i} book={b}></Book>);
+  return pile.map((b, i) => <BookC key={i} book={b}></BookC>);
 };
 
 export async function getStaticProps() {
