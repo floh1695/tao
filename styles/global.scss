@@ -14,6 +14,12 @@ a {
   transition: color var(--time) ease-in-out;
 }
 
+br {
+  display: block;
+  content: "";
+  margin-top: 0.75rem;
+}
+
 p {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;

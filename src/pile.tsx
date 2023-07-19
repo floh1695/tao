@@ -152,6 +152,7 @@ export const book4 =
         The Master replied: <q>
           You are confused because you do not understand Tao. Only a fool expects rational behavior from his fellow humans. Why do you expect it from a machine that humans have constructed? Computers simulate determinism; only Tao is perfect.
           <br />
+          <br />
           The rules of programming are transitory; only Tao is eternal. Therefore, you must contemplate Tao before you receive Enlightenment.
         </q>
       </p>
