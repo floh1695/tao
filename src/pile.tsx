@@ -281,18 +281,30 @@ export const book7 =
   )
   .addNextChapter(
     <>
+      <p>A novice asked the Master: <q>In the East, there is a great tree-structure that men call <q>Corporate Headquarters</q>. It is bloated out of shape with vice presidents and accountants. It issues a multitude of memos, each saying <q>Go Hence!</q> or <q>Go Hither!</q> and nobody knows what is meant. Every year new names are put onto the branches, but all to no avail. How can such an unnatural entity exist?</q></p>
+      <p>The Master replied: <q>You perceive this immense structure and are disturbed that it has no rational purpose. Can you not take amusement from its endless gyrations? Do you not enjoy the untroubled ease of programming beneath its sheltering branches? Why are you bothered by its uselessness?</q></p>
     </>
   )
   .addNextChapter(
     <>
+      <p>In the East there is a shark which is larger than all other fish. It changes into a bird whose wings are like clouds filling the sky. When this bird moves across the land, it brings a message from Corporate Headquarters. This message it drops into the midst of the programmers, like a seagull making its mark upon the beach. Then the bird mounts on the wind and, with the blue sky at its back, returns home.</p>
+      <p>The novice programmer stares in wonder at the bird, for he understands it not. The average programmer dreads the coming of the bird, for he fears its message. The Master Programmer continues to work at his terminal, unaware that the bird has come and gone.</p>
     </>
   )
   .addNextChapter(
     <>
+      <p>The Magician of the Ivory Tower brought his latest invention for the Master Programmer to examine. The Magician wheeled a large black box into the Master's office while the Master waited in silence.</p>
+      <p><q>This is an integrated, distributed, general-purpose workstation,</q> began the Magician, <q>ergonomically designed with a proprietary operating system, sixth generation languages, and multiple state of the art user interfaces. It took my assistants several hundred man years to construct. Is it not amazing?</q></p>
+      <p>The Master Programmer raised his eyebrows slightly. <q>It is indeed amazing,</q> he said.</p>
+      <p><q>Corporate Headquarters has commanded,</q> continued the Magician, <q>that everyone use this workstation as a platform for new programs. Do you agree to this?</q></p>
+      <p><q>Certainly,</q> replied the Master. <q>I will have it transported to the Data Center immediately!</q> And the Magician returned to his tower, well pleased.</p>
+      <p>Several days later, a novice wandered into the office of the Master Programmer and said, <q>I cannot find the listing for my new program. Do you know where it might be?</q></p>
+      <p><q>Yes,</q> replied the Master, <q>the listings are stacked on the platform in the Data Center.</q></p>
     </>
   )
   .addNextChapter(
     <>
+      <p>The Master Programmer moves from program to program without fear. No change in management can harm him. He will not be fired, even if the project is cancelled. Why is this? He is filled with Tao.</p>
     </>
   );
 
