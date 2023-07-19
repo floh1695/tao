@@ -316,18 +316,32 @@ export const book8 =
   )
   .addNextChapter(
     <>
+      <p>A novice asked the Master: <q>I perceive that one computer company is much larger than all others. It towers above its competition like a giant among dwarfs. Any one of its divisions could comprise an entire business. Why is this so?</q></p>
+      <p>The Master replied, <q>Why do you ask such foolish questions? That company is large because it is large. If it only made hardware, nobody would buy it. If it only made software, nobody would use it. If it only maintained systems, people would treat it like a servant. But because it combines all of these things, people think it one of the gods! By not seeking to strive, it conquers without effort.</q></p>
     </>
   )
   .addNextChapter(
     <>
+      <p>A Master Programmer passed a novice programmer one day.</p>
+      <p>The Master noted the novice's preoccupation with a hand-held computer game.</p>
+      <p><q>Excuse me,</q> he said, <q>may I examine it?</q></p>
+      <p>The novice bolted to attention and handed the device to the Master. <q>I see that the device claims to have three levels of play: Easy, Medium, and Hard,</q> said the Master. <q>Yet every such device has another level of play, where the device seeks not to conquer the human, nor to be conquered by the human.</q></p>
+      <p>Pray, Great Master,<q></q> implored the novice, <q>how does one find this mysterious setting?</q></p>
+      <p>The Master dropped the device to the ground and crushed it with his heel. Suddenly the novice was enlightened.</p>
     </>
   )
   .addNextChapter(
     <>
+      <p>There was once a programmer who wrote software for personal computers. <q>Look at how well off I am here,</q> he said to a mainframe programmer who came to visit. <q>I have my own operating system and file storage device. I do not have to share my resources with anyone. The software is self-consistent and easy-to-use. Why do you not quit your present job and join me here?</q></p>
+      <p>The mainframe programmer then began to describe his system to his friend, saying, <q>The mainframe sits like an ancient Sage meditating in the midst of the Data Center. Its disk drives lie end-to- end like a great ocean of machinery. The software is as multifaceted as a diamond, and as convoluted as a primeval jungle. The programs, each unique, move through the system like a swift-flowing river. That is why I am happy where I am.</q></p>
+      <p>The personal computer programmer, upon hearing this, fell silent. But the two programmers remained friends until the end of their days.</p>
     </>
   )
   .addNextChapter(
     <>
+      <p>Hardware met Software on the road to Changtse. Software said: <q>You are Yin and I am Yang. If we travel together, we will become famous and earn vast sums of money.</q> And so they set forth together, thinking to conquer the world.</p>
+      <p>Presently, they met Firmware, who was dressed in tattered rags and hobbled along propped on a thorny stick. Firmware said to them: <q>The Tao lies beyond Yin and Yang. It is silent and still as a pool of water. It does not seek fame; therefore, nobody knows its presence. It does not seek fortune, for it is complete within itself. It exists beyond space and time.</q></p>
+      <p>Software and Hardware, ashamed, returned to their homes.</p>
     </>
   );
 
