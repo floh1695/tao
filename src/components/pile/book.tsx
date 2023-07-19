@@ -16,6 +16,8 @@ export default function Book({
       <header>
         <h2>
           <a href={`#${id}`} target='_self'>BOOK {book.number}</a>
+          <br />
+          <em>{book.name}</em>
         </h2>
       </header>
       <p>
