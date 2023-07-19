@@ -326,7 +326,7 @@ export const book8 =
       <p>The Master noted the novice's preoccupation with a hand-held computer game.</p>
       <p><q>Excuse me,</q> he said, <q>may I examine it?</q></p>
       <p>The novice bolted to attention and handed the device to the Master. <q>I see that the device claims to have three levels of play: Easy, Medium, and Hard,</q> said the Master. <q>Yet every such device has another level of play, where the device seeks not to conquer the human, nor to be conquered by the human.</q></p>
-      <p>Pray, Great Master,<q></q> implored the novice, <q>how does one find this mysterious setting?</q></p>
+      <p><q>Pray, Great Master,</q> implored the novice, <q>how does one find this mysterious setting?</q></p>
       <p>The Master dropped the device to the ground and crushed it with his heel. Suddenly the novice was enlightened.</p>
     </>
   )
