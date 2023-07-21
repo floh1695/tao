@@ -24,9 +24,9 @@ pipeline {
       steps {
         sh """
           ${setFnmEnvironment()}
-          ~/.local/share/fnm/fnm use
-
           cd web
+
+          ~/.local/share/fnm/fnm use
 
           npm install
           npm run build
