@@ -44,7 +44,7 @@ pipeline {
         script {
           sh """
             sudo systemctl stop ${serviceName}
-            rsync -avz --exclude='.git/' ./ /opt/tao.charlesbayley.dev/${branch}/
+            rsync -avz --exclude='.git/' web/ /opt/tao.charlesbayley.dev/${branch}/
             sudo systemctl start ${serviceName}
           """
         }
