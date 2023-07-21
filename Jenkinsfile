@@ -10,6 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         sh """
+          fnm use
           npm install
           npm run build
         """
