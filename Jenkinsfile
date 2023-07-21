@@ -3,7 +3,7 @@ def getServiceName(branch) {
     case "production":
       return "taoprogramming.service"
     default:
-      return ""
+      return null
   }
 }
 
@@ -33,13 +33,13 @@ pipeline {
     }
 
     stage('Deploy') {
+      when {
+        expression {
+          serviceName != null
+        }
+      }
       steps {
         script {
-          if (serviceName == "") {
-            currentBuild.result = 'SUCCESS'
-            return
-          }
-
           sh """
             sudo systemctl stop ${serviceName}
             rsync -avz --exclude='.git/' ./ /opt/tao.charlesbayley.dev/${branch}/
