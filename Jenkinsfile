@@ -26,6 +26,8 @@ pipeline {
           ${setFnmEnvironment()}
           ~/.local/share/fnm/fnm use
 
+          cd web
+
           npm install
           npm run build
         """
