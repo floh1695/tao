@@ -48,7 +48,7 @@ def getServiceName(branch) {
 }
 
 def setFnmEnvironment() {
-  sh """
+  sh '''
     eval "$(~/.local/share/fnm/fnm env --use-on-cd)"
-  """
+  '''
 }
