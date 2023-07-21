@@ -10,8 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         sh """
-          ~/.local/share/fnm/fnm env
-          ~/.local/share/fnm/fnm use
+          source .env.fnm.sh
 
           npm install
           npm run build
