@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Optional from '@kinds/optional';
 import Chapter from '@kinds/chapter';
 
 export type Book = {
@@ -26,7 +25,7 @@ export const addNextChapter = (book: Book, content: React.ReactNode) => {
 };
 
 export const Book = {
-  new: (number: number, name: string, spaken: string, chapters?: Optional<Array<Chapter>>): Book => {
+  new: (number: number, name: string, spaken: string, chapters?: Array<Chapter>): Book => {
     const book = {
       number,
       name,
