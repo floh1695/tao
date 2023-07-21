@@ -11,6 +11,7 @@ pipeline {
       steps {
         sh """
           ~/.local/share/fnm/fnm use
+          ~/.local/share/fnm/fnm env
 
           npm install
           npm run build
