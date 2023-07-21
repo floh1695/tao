@@ -1,0 +1,14 @@
+[Unit]
+Description=The Tao of Programming
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/tao.charlesbayley.dev/production
+ExecStart=/opt/tao.charlesbayley.dev/production/start.sh
+Restart=always
+User=jenkins
+Group=jenkins
+
+[Install]
+WantedBy=multi-user.target

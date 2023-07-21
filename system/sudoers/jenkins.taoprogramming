@@ -1,0 +1,2 @@
+jenkins ALL=(ALL) NOPASSWD: /bin/systemctl start taoprogramming.service
+jenkins ALL=(ALL) NOPASSWD: /bin/systemctl stop taoprogramming.service
