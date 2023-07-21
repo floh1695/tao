@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang='en'>
       <body>
         <header id='header'>
-          <h1><a href='/'>The Tao of Programming</a></h1>
+          <h1><a href={hosturl()} target="_self">The Tao of Programming</a></h1>
           <strong>Translated by <em>Geoffrey James</em></strong>
         </header>
         <div>
