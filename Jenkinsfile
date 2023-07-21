@@ -3,7 +3,7 @@ def getServiceName(branch) {
     case "production":
       return "taoprogramming.service"
     default:
-      return null
+      return "NONE"
   }
 }
 
@@ -20,7 +20,7 @@ pipeline {
   }
 
   stages {
-    stage('Build') {
+    stage("Build") {
       steps {
         sh """
           ${setFnmEnvironment()}
@@ -32,10 +32,10 @@ pipeline {
       }
     }
 
-    stage('Deploy') {
+    stage("Deploy") {
       when {
         expression {
-          serviceName != null
+          serviceName != "NONE"
         }
       }
       steps {
