@@ -22,7 +22,7 @@ pipeline {
     stage('Deploy') {
       when {
         expression {
-          ${serviceName} != ""
+          serviceName != ""
         }
       }
       steps {
