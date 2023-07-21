@@ -1,6 +1,6 @@
 pipeline {
   agent any
-  
+
   environment {
     branch = "${env.BRANCH_NAME}"
     serviceName = getServiceName(branch)
@@ -10,8 +10,8 @@ pipeline {
     stage('Build') {
       steps {
         sh """
-          ~/.local/share/fnm/fnm use
           ~/.local/share/fnm/fnm env
+          ~/.local/share/fnm/fnm use
 
           npm install
           npm run build
@@ -29,7 +29,7 @@ pipeline {
         script {
           sh """
             sudo systemctl stop ${serviceName}
-            rsync -avz --exclude='.git/' ./ /opt/mortgagesbymechele.com/${branch}/
+            rsync -avz --exclude='.git/' ./ /opt/tao.charlesbayley.dev/${branch}/
             sudo systemctl start ${serviceName}
           """
         }
