@@ -33,13 +33,13 @@ pipeline {
     }
 
     stage('Deploy') {
-      when {
-        expression {
-          serviceName != ""
-        }
-      }
       steps {
         script {
+          if (serviceName == "") {
+            currentBuild.result = 'SUCCESS'
+            return
+          }
+
           sh """
             sudo systemctl stop ${serviceName}
             rsync -avz --exclude='.git/' ./ /opt/tao.charlesbayley.dev/${branch}/
