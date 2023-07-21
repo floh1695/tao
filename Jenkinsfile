@@ -9,8 +9,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        setFnmEnvironment()
         sh """
+          ${setFnmEnvironment()}
           ~/.local/share/fnm/fnm use
 
           npm install
@@ -48,7 +48,5 @@ def getServiceName(branch) {
 }
 
 def setFnmEnvironment() {
-  sh '''
-    eval "$(~/.local/share/fnm/fnm env --use-on-cd)"
-  '''
+  'eval "$(~/.local/share/fnm/fnm env --use-on-cd)"'
 }
