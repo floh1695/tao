@@ -1,3 +1,16 @@
+def getServiceName(branch) {
+  switch (branch) {
+    case "production":
+      return "taoprogramming.service"
+    default:
+      return ""
+  }
+}
+
+def setFnmEnvironment() {
+  'eval "$(~/.local/share/fnm/fnm env --use-on-cd)"'
+}
+
 pipeline {
   agent any
 
@@ -36,17 +49,4 @@ pipeline {
       }
     }
   }
-}
-
-def getServiceName(branch) {
-  switch (branch) {
-    case "production":
-      return "taoprogramming.service"
-    default:
-      return ""
-  }
-}
-
-def setFnmEnvironment() {
-  'eval "$(~/.local/share/fnm/fnm env --use-on-cd)"'
 }
