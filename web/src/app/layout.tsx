@@ -22,7 +22,7 @@ export default function RootLayout({
             I copied this from <a href='http://misspiggy.gsfc.nasa.gov/tao.html'>http://misspiggy.gsfc.nasa.gov/tao.html</a> and stripped out all of the IMHO extraneous formatting.
           </Note>
           <Note author='Charlie'>
-            I copied this from <a href='http://www.mit.edu/~xela/tao.html'>http://www.mit.edu/~xela/tao.html</a> because I wanted to update the style.
+            I copied this from <a href='http://www.mit.edu/~xela/tao.html'>http://www.mit.edu/~xela/tao.html</a> because I wanted to update the style and hyperlinks are cool.
           </Note>
         </div>
         <main>
